@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Morocco: Extreme Survival Expedition 2026-2027 | AEANSB Official</title>
+  <meta name="description" content="Official extreme survival training in Morocco by AEANSB. White Belt to Monitor Certificate. Tangier 2026. Insured, certified, international.">
+  <meta property="og:title" content="Wild Morocco: Extreme Survival Expedition 2026-2027">
+  <meta property="og:description" content="Master extreme survival in Morocco's Atlas Mountains. Official certification by AEANSB.">
+  <meta property="og:image" content="hero_bg.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon_wm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Open Sans',sans-serif;background:#0a0a0a;color:#fff;line-height:1.6;overflow-x:hidden}
+    :root{
+      --gold:#FFB800;--gold-dark:#e6a500;--green:#5a7a2e;--green-light:#7ab648;
+      --dark:#0a0a0a;--dark2:#111;--dark3:#1a1a1a;--dark4:#222;
+      --gray:#888;--gray-light:#ccc;--white:#fff;--red:#c0392b;
+      --border:rgba(255,184,0,0.15);--glow:rgba(255,184,0,0.3);
+    }
+    .section-title{font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:900;text-align:center;margin-bottom:.5rem;letter-spacing:-.02em}
+    .section-subtitle{text-align:center;color:var(--gray-light);font-size:1.05rem;margin-bottom:2.5rem;max-width:700px;margin-left:auto;margin-right:auto}
+    .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+    /* LANG TOGGLE */
+    .lang-toggle{position:fixed;top:80px;right:1.5rem;z-index:999;display:flex;gap:.3rem;background:rgba(0,0,0,.85);padding:.4rem;border-radius:6px;border:1px solid var(--border);backdrop-filter:blur(8px)}
+    .lang-btn{background:transparent;color:var(--gray);border:none;padding:.35rem .7rem;cursor:pointer;font-size:.8rem;font-weight:700;transition:all .2s;border-radius:4px;letter-spacing:.05em}
+    .lang-btn.active{background:var(--gold);color:#000}
+    .lang-btn:hover{color:var(--gold)}
+    /* NAVBAR */
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:70px;display:flex;align-items:center;justify-content:space-between;transition:all .3s}
+    .navbar.scrolled{height:60px;box-shadow:0 4px 20px rgba(0,0,0,.5)}
+    .navbar-brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+    .navbar-brand img{height:48px;width:auto;transition:height .3s}
+    .navbar.scrolled .navbar-brand img{height:40px}
+    .brand-text{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.1rem;letter-spacing:.05em;color:var(--white)}
+    .brand-text span{color:var(--gold)}
+    .nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center}
+    .nav-links a{color:var(--gray-light);text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.04em;transition:color .2s;text-transform:uppercase}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-cta{background:var(--gold);color:#000!important;padding:.55rem 1.3rem;border-radius:4px;font-weight:800!important;transition:all .2s;cursor:pointer;border:none;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em}
+    .nav-cta:hover{background:var(--gold-dark);transform:translateY(-1px);box-shadow:0 4px 15px var(--glow)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
+    .hamburger span{width:25px;height:2px;background:var(--gold);transition:all .3s}
+    @media(max-width:900px){
+      .nav-links{display:none;position:fixed;top:70px;left:0;right:0;background:rgba(10,10,10,.98);flex-direction:column;padding:2rem;gap:1.5rem;border-bottom:1px solid var(--border)}
+      .nav-links.open{display:flex}
+      .hamburger{display:flex}
+    }
+    /* HERO */
+    .hero{min-height:100vh;background:url('hero_bg.jpg') center/cover no-repeat;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 2rem 5rem}
+    .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.4) 50%,rgba(255,184,0,.08) 100%);z-index:1}
+    .hero-content{position:relative;z-index:2;max-width:950px}
+    .hero-badge{display:inline-block;background:rgba(255,184,0,.15);border:1px solid var(--gold);color:var(--gold);padding:.4rem 1.2rem;border-radius:20px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.5rem}
+    .hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2.2rem,5vw,4.5rem);font-weight:900;line-height:1.05;margin-bottom:1.2rem;letter-spacing:-.02em}
+    .hero h1 em{color:var(--gold);font-style:normal}
+    .hero .subtitle{font-size:clamp(1rem,2vw,1.3rem);color:var(--gray-light);margin-bottom:2.5rem;font-weight:400;line-height:1.7}
+    .cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .btn{padding:1rem 2.2rem;font-size:.95rem;font-weight:700;border:none;border-radius:4px;cursor:pointer;transition:all .3s;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;letter-spacing:.03em}
+    .btn-gold{background:var(--gold);color:#000}
+    .btn-gold:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:0 10px 30px var(--glow)}
+    .btn-outline{background:transparent;color:var(--white);border:2px solid var(--gold)}
+    .btn-outline:hover{background:var(--gold);color:#000}
+    /* TRIPLE BRANDING */
+    .branding{background:linear-gradient(135deg,rgba(255,184,0,.04) 0%,rgba(90,122,46,.04) 100%);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3.5rem 2rem}
+    .branding-inner{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:2rem}
+    .branding-inner img{max-height:110px;width:auto;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}
+    .branding-plus{color:var(--gold);font-size:2rem;font-weight:900;font-family:'Montserrat',sans-serif}
+    .branding p{color:var(--gray-light);font-size:1.05rem;line-height:1.8;max-width:850px;margin:0 auto;text-align:center}
+    .branding strong{color:var(--gold)}
+    /* STATS */
+    .stats{background:var(--dark2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;text-align:center}
+    .stat h3{font-family:'Montserrat',sans-serif;font-size:2.8rem;font-weight:900;color:var(--gold);margin-bottom:.3rem}
+    .stat p{color:var(--gray-light);font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+    /* CERTIFICATION */
+    .cert{padding:5rem 2rem;background:var(--dark)}
+    .cert-box{background:linear-gradient(135deg,rgba(255,184,0,.08) 0%,rgba(90,122,46,.08) 100%);border:2px solid var(--gold);border-radius:12px;padding:3rem;max-width:1000px;margin:0 auto}
+    .cert-box .section-title{color:var(--gold)}
+    .cert-box>p{color:var(--gray-light);line-height:1.8;text-align:center;margin-bottom:2rem;font-size:1.05rem}
+    .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .cert-item{background:rgba(255,184,0,.04);padding:1.5rem;border-radius:8px;border-left:4px solid var(--gold)}
+    .cert-item h4{color:var(--gold);font-weight:700;margin-bottom:.5rem;font-size:1rem}
+    .cert-item p{font-size:.9rem;color:var(--gray-light);line-height:1.6}
+    /* BELT SYSTEM */
+    .belts{padding:5rem 2rem;background:var(--dark2)}
+    .belt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+    .belt-card{background:var(--dark3);border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:all .3s;position:relative}
+    .belt-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.4)}
+    .belt-header{padding:1.5rem;text-align:center}
+    .belt-header h3{font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:900;margin-bottom:.3rem}
+    .belt-header .belt-location{font-size:.85rem;color:var(--gray);font-weight:600}
+    .belt-header .belt-date{font-size:.9rem;color:var(--gold);font-weight:700;margin-top:.3rem}
+    .belt-body{padding:0 1.5rem 1.5rem}
+    .belt-body p{font-size:.9rem;color:var(--gray-light);line-height:1.6;margin-bottom:1rem}
+    .belt-body ul{list-style:none;padding:0}
+    .belt-body ul li{padding:.3rem 0;font-size:.85rem;color:var(--gray-light)}
+    .belt-body ul li::before{content:'>';color:var(--gold);font-weight:700;margin-right:.5rem}
+    .belt-white .belt-header{background:linear-gradient(135deg,#f5f5f5 0%,#e0e0e0 100%);color:#222}
+    .belt-white .belt-header .belt-location{color:#555}
+    .belt-green .belt-header{background:linear-gradient(135deg,var(--green) 0%,var(--green-light) 100%);color:#fff}
+    .belt-green .belt-header .belt-location{color:rgba(255,255,255,.7)}
+    .belt-black .belt-header{background:linear-gradient(135deg,#1a1a1a 0%,#333 100%);color:#fff;border-bottom:2px solid var(--gold)}
+    .belt-black .belt-header .belt-location{color:var(--gray)}
+    .belt-red .belt-header{background:linear-gradient(135deg,var(--red) 0%,#e74c3c 100%);color:#fff}
+    .belt-red .belt-header .belt-location{color:rgba(255,255,255,.7)}
+    /* PRICING */
+    .pricing{padding:5rem 2rem;background:var(--dark)}
+    .price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1100px;margin:0 auto}
+    .price-card{background:var(--dark3);border:1px solid var(--border);border-radius:12px;padding:2rem;text-align:center;transition:all .3s;position:relative}
+    .price-card:hover{transform:translateY(-5px);border-color:var(--gold)}
+    .price-card.featured{border:2px solid var(--gold);box-shadow:0 0 30px var(--glow)}
+    .price-card.featured::before{content:'BEST VALUE';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;padding:.3rem 1rem;border-radius:20px;font-size:.7rem;font-weight:800;letter-spacing:.1em}
+    .price-name{font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.05em}
+    .price-amount{font-family:'Montserrat',sans-serif;font-size:3rem;font-weight:900;color:var(--gold);margin:.5rem 0}
+    .price-amount small{font-size:1rem;color:var(--gray)}
+    .price-desc{color:var(--gray-light);font-size:.9rem;margin-bottom:1.5rem;line-height:1.5}
+    .price-features{list-style:none;text-align:left;margin-bottom:1.5rem}
+    .price-features li{padding:.4rem 0;font-size:.85rem;color:var(--gray-light);border-bottom:1px solid rgba(255,255,255,.05)}
+    .price-features li::before{content:'✓';color:var(--gold);font-weight:700;margin-right:.5rem}
+    .price-btn{display:block;width:100%;padding:.8rem;background:var(--gold);color:#000;border:none;border-radius:4px;font-weight:700;cursor:pointer;transition:all .2s;font-size:.9rem}
+    .price-btn:hover{background:var(--gold-dark);box-shadow:0 4px 15px var(--glow)}
+    /* SAFETY */
+    .safety{padding:5rem 2rem;background:var(--dark2)}
+    .safety-box{background:linear-gradient(135deg,rgba(90,122,46,.08) 0%,rgba(255,184,0,.04) 100%);border:1px solid var(--green);border-radius:12px;padding:3rem;max-width:900px;margin:0 auto}
+    .safety-box .section-title{color:var(--green-light)}
+    .safety-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem}
+    .safety-item{text-align:center;padding:1.5rem}
+    .safety-item .safety-icon{font-size:2.5rem;margin-bottom:.8rem}
+    .safety-item h4{color:var(--gold);font-weight:700;margin-bottom:.5rem}
+    .safety-item p{font-size:.85rem;color:var(--gray-light);line-height:1.5}
+    /* POLICIES */
+    .policies{padding:5rem 2rem;background:var(--dark)}
+    .accordion{max-width:800px;margin:0 auto}
+    .acc-item{border:1px solid var(--border);border-radius:8px;margin-bottom:.8rem;overflow:hidden}
+    .acc-header{background:var(--dark3);padding:1.2rem 1.5rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--gray-light);transition:all .2s}
+    .acc-header:hover{color:var(--gold)}
+    .acc-header::after{content:'+';color:var(--gold);font-size:1.3rem;font-weight:700;transition:transform .3s}
+    .acc-item.open .acc-header::after{transform:rotate(45deg)}
+    .acc-body{max-height:0;overflow:hidden;transition:max-height .4s ease;background:var(--dark4)}
+    .acc-item.open .acc-body{max-height:300px}
+    .acc-body p{padding:1.2rem 1.5rem;color:var(--gray-light);font-size:.9rem;line-height:1.7}
+    /* GALLERY */
+    .gallery{padding:5rem 2rem;background:var(--dark2)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem;max-width:1100px;margin:0 auto}
+    .gallery-grid img{width:100%;height:200px;object-fit:cover;border-radius:8px;border:1px solid var(--border);transition:all .3s;cursor:pointer}
+    .gallery-grid img:hover{transform:scale(1.03);border-color:var(--gold);box-shadow:0 8px 25px rgba(0,0,0,.5)}
+    /* URGENCY */
+    .urgency{padding:3rem 2rem;background:linear-gradient(135deg,rgba(192,57,43,.1) 0%,rgba(255,184,0,.05) 100%);border-top:2px solid var(--red);border-bottom:2px solid var(--red);text-align:center}
+    .urgency-label{color:var(--red);font-weight:800;font-size:1.1rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
+    .urgency-count{font-family:'Montserrat',sans-serif;font-size:4rem;font-weight:900;color:var(--gold)}
+    .urgency-sub{color:var(--gray-light);font-size:.95rem;margin-top:.3rem}
+    /* FORM */
+    .enroll{padding:5rem 2rem;background:var(--dark)}
+    .form-box{background:linear-gradient(135deg,rgba(255,184,0,.05) 0%,rgba(90,122,46,.05) 100%);border:1px solid var(--border);border-radius:12px;padding:2.5rem;max-width:550px;margin:0 auto}
+    .form-box h3{font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:900;color:var(--gold);margin-bottom:1.5rem;text-align:center}
+    .fg{margin-bottom:1.2rem}
+    .fg label{display:block;margin-bottom:.4rem;font-weight:600;color:var(--gray-light);font-size:.9rem}
+    .fg input,.fg select{width:100%;padding:.75rem;background:var(--dark3);border:1px solid var(--border);border-radius:4px;color:var(--white);font-size:.9rem;transition:border .2s}
+    .fg input:focus,.fg select:focus{outline:none;border-color:var(--gold)}
+    .fg select option{background:var(--dark3)}
+    .form-submit{width:100%;padding:1rem;background:var(--gold);color:#000;border:none;border-radius:4px;font-weight:800;font-size:1rem;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:.05em}
+    .form-submit:hover{background:var(--gold-dark);box-shadow:0 4px 15px var(--glow)}
+    /* TERMS */
+    .terms{padding:5rem 2rem;background:var(--dark2)}
+    .terms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.2rem;max-width:1100px;margin:0 auto}
+    .term-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:all .3s}
+    .term-card:hover{border-color:var(--gold)}
+    .term-card h4{color:var(--gold);font-weight:700;margin-bottom:.8rem;font-size:1rem}
+    .term-card p{font-size:.88rem;color:var(--gray-light);line-height:1.6}
+    /* FOOTER */
+    .footer{background:var(--dark);border-top:1px solid var(--border);padding:4rem 2rem 2rem}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;max-width:1100px;margin:0 auto;margin-bottom:2rem}
+    .footer-col h4{font-family:'Montserrat',sans-serif;color:var(--gold);font-weight:700;margin-bottom:1rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.05em}
+    .footer-col p,.footer-col a{color:var(--gray);font-size:.88rem;line-height:1.8;text-decoration:none;display:block}
+    .footer-col a:hover{color:var(--gold)}
+    .footer-logos{display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem}
+    .footer-logos img{height:50px;width:auto;opacity:.7;transition:opacity .2s}
+    .footer-logos img:hover{opacity:1}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;text-align:center;max-width:1100px;margin:0 auto}
+    .footer-bottom p{color:var(--gray);font-size:.8rem;line-height:1.8}
+    /* ANIMATIONS */
+    .fade-in{opacity:0;transform:translateY(30px);transition:all .6s ease}
+    .fade-in.visible{opacity:1;transform:translateY(0)}
+    /* LIGHTBOX */
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:2000;align-items:center;justify-content:center;cursor:pointer}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:90%;max-height:90%;border-radius:8px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+    /* LANG CONTENT */
+    [data-lang]{display:none}
+    [data-lang="en"]{display:initial}
+  </style>
+</head>
+<body>
+
+<!-- LANGUAGE TOGGLE -->
+<div class="lang-toggle">
+  <button class="lang-btn active" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('es')">ES</button>
+  <button class="lang-btn" onclick="setLang('fr')">FR</button>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="navbar-brand">
+    <img src="assets/logo_wild_morocco.png" alt="Wild Morocco">
+    <div class="brand-text">WILD <span>MOROCCO</span></div>
+  </a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" data-lang="en">About</a><a href="#about" data-lang="es">Nosotros</a><a href="#about" data-lang="fr">A Propos</a></li>
+    <li><a href="#programs" data-lang="en">Programs</a><a href="#programs" data-lang="es">Programas</a><a href="#programs" data-lang="fr">Programmes</a></li>
+    <li><a href="#pricing" data-lang="en">Pricing</a><a href="#pricing" data-lang="es">Precios</a><a href="#pricing" data-lang="fr">Tarifs</a></li>
+    <li><a href="#certification" data-lang="en">Certification</a><a href="#certification" data-lang="es">Certificacion</a><a href="#certification" data-lang="fr">Certification</a></li>
+    <li><a href="#terms" data-lang="en">Terms</a><a href="#terms" data-lang="es">Terminos</a><a href="#terms" data-lang="fr">Conditions</a></li>
+    <li><button class="nav-cta" onclick="scrollToSection('#enroll')"><span data-lang="en">Enroll Now</span><span data-lang="es">Inscribirse</span><span data-lang="fr">S'inscrire</span></button></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content fade-in">
+    <div class="hero-badge">
+      <span data-lang="en">Official AEANSB Program 2026-2027</span>
+      <span data-lang="es">Programa Oficial AEANSB 2026-2027</span>
+      <span data-lang="fr">Programme Officiel AEANSB 2026-2027</span>
+    </div>
+    <h1>
+      <span data-lang="en">Wild Morocco: <em>Extreme Survival</em> Expedition</span>
+      <span data-lang="es">Wild Morocco: Expedicion de <em>Supervivencia Extrema</em></span>
+      <span data-lang="fr">Wild Morocco: Expedition de <em>Survie Extreme</em></span>
+    </h1>
+    <p class="subtitle">
+      <span data-lang="en">Master the art of survival in extreme environments. Progress from White Belt to the exclusive Monitor Certificate. Tangier, Morocco.</span>
+      <span data-lang="es">Domina el arte de la supervivencia en entornos extremos. Progresa del Cinturon Blanco al exclusivo Certificado de Monitor. Tanger, Marruecos.</span>
+      <span data-lang="fr">Maitrisez l'art de la survie en environnements extremes. Progressez de la Ceinture Blanche au Certificat de Moniteur exclusif. Tanger, Maroc.</span>
+    </p>
+    <div class="cta-row">
+      <button class="btn btn-gold" onclick="scrollToSection('#enroll')">
+        <span data-lang="en">Start Your Journey</span>
+        <span data-lang="es">Comienza Tu Aventura</span>
+        <span data-lang="fr">Commencez Votre Aventure</span>
+      </button>
+      <button class="btn btn-outline" onclick="scrollToSection('#programs')">
+        <span data-lang="en">View Programs</span>
+        <span data-lang="es">Ver Programas</span>
+        <span data-lang="fr">Voir les Programmes</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TRIPLE BRANDING -->
+<section class="branding" id="about">
+  <div class="branding-inner fade-in">
+    <img src="assets/logo_academia.webp" alt="AEANSB Academy">
+    <div class="branding-plus">+</div>
+    <img src="assets/logo_wnsx.png" alt="White Neck Survival Xperience">
+    <div class="branding-plus">=</div>
+    <img src="assets/logo_wild_morocco.png" alt="Wild Morocco" style="max-height:130px">
+  </div>
+  <p class="fade-in">
+    <span data-lang="en"><strong>Wild Morocco</strong> is an official survival training expedition organized by the <strong>Academia Espanola de Artes de la Naturaleza, Supervivencia y Bushcraft (AEANSB)</strong>, in partnership with <strong>White Neck Survival Xperience</strong>. We are a legally registered non-profit organization (National Registry of Associations, Ministry of the Interior, Number: 632967). This is a <strong>Private Training Program</strong>. The diplomas and Monitor Certificate are official within the scope of our institution. We are in the process of university homologation. Full compliance with EU GDPR.</span>
+    <span data-lang="es"><strong>Wild Morocco</strong> es una expedicion oficial de formacion en supervivencia organizada por la <strong>Academia Espanola de Artes de la Naturaleza, Supervivencia y Bushcraft (AEANSB)</strong>, en colaboracion con <strong>White Neck Survival Xperience</strong>. Somos una asociacion sin animo de lucro legalmente registrada (Registro Nacional de Asociaciones, Ministerio del Interior, Numero: 632967). Este es un <strong>Programa de Formacion Privada</strong>. Los diplomas y el Certificado de Monitor son oficiales dentro del ambito de nuestra institucion. Estamos en proceso de homologacion universitaria. Cumplimiento total con el RGPD de la UE.</span>
+    <span data-lang="fr"><strong>Wild Morocco</strong> est une expedition officielle de formation a la survie organisee par l'<strong>Academia Espanola de Artes de la Naturaleza, Supervivencia y Bushcraft (AEANSB)</strong>, en partenariat avec <strong>White Neck Survival Xperience</strong>. Nous sommes une association a but non lucratif legalement enregistree (Registre National des Associations, Ministere de l'Interieur, Numero: 632967). Il s'agit d'un <strong>Programme de Formation Privee</strong>. Les diplomes et le Certificat de Moniteur sont officiels dans le cadre de notre institution. Nous sommes en cours d'homologation universitaire. Conformite totale avec le RGPD de l'UE.</span>
+  </p>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat fade-in">
+    <h3>4</h3>
+    <p><span data-lang="en">Progressive Levels</span><span data-lang="es">Niveles Progresivos</span><span data-lang="fr">Niveaux Progressifs</span></p>
+  </div>
+  <div class="stat fade-in">
+    <h3>149+</h3>
+    <p><span data-lang="en">Starting from</span><span data-lang="es">Desde</span><span data-lang="fr">A partir de</span></p>
+  </div>
+  <div class="stat fade-in">
+    <h3>100%</h3>
+    <p><span data-lang="en">Insured & Safe</span><span data-lang="es">Asegurado y Seguro</span><span data-lang="fr">Assure et Securise</span></p>
+  </div>
+  <div class="stat fade-in">
+    <h3>20</h3>
+    <p><span data-lang="en">Max Participants</span><span data-lang="es">Participantes Max</span><span data-lang="fr">Participants Max</span></p>
+  </div>
+</section>
+
+<!-- OFFICIAL CERTIFICATION -->
+<section class="cert" id="certification">
+  <div class="cert-box fade-in">
+    <h2 class="section-title">
+      <span data-lang="en">Official Monitor Certification</span>
+      <span data-lang="es">Certificacion Oficial de Monitor</span>
+      <span data-lang="fr">Certification Officielle de Moniteur</span>
+    </h2>
+    <p>
+      <span data-lang="en">Upon completion of the full academic program, you will receive an <strong>Official International Diploma</strong> accrediting you as a Survival & Bushcraft Monitor, issued by AEANSB under Spanish Law (Organic Law 1/2002). The diploma has <strong>official and international character</strong> and can be used by the graduate under AEANSB's liability waiver terms.</span>
+      <span data-lang="es">Al completar el programa academico completo, recibiras un <strong>Diploma Oficial Internacional</strong> que te acredita como Monitor de Supervivencia y Bushcraft, emitido por AEANSB bajo la Ley Organica 1/2002. El diploma tiene <strong>caracter oficial e internacional</strong> y puede ser utilizado por el graduado bajo los terminos de exencion de responsabilidad de la AEANSB.</span>
+      <span data-lang="fr">A l'issue du programme academique complet, vous recevrez un <strong>Diplome Officiel International</strong> vous accreditant en tant que Moniteur de Survie et Bushcraft, delivre par l'AEANSB en vertu de la Loi Organique espagnole 1/2002. Le diplome a un <strong>caractere officiel et international</strong> et peut etre utilise par le diplome selon les conditions de decharge de responsabilite de l'AEANSB.</span>
+    </p>
+    <div class="cert-grid">
+      <div class="cert-item">
+        <h4><span data-lang="en">Official Status</span><span data-lang="es">Estatus Oficial</span><span data-lang="fr">Statut Officiel</span></h4>
+        <p><span data-lang="en">Registered with Spain's Ministry of Interior (Reg. 632967). Valid internationally under AEANSB framework.</span><span data-lang="es">Registrada en el Ministerio del Interior de Espana (Reg. 632967). Valido internacionalmente bajo el marco de AEANSB.</span><span data-lang="fr">Enregistree aupres du Ministere de l'Interieur espagnol (Reg. 632967). Valable internationalement dans le cadre de l'AEANSB.</span></p>
+      </div>
+      <div class="cert-item">
+        <h4><span data-lang="en">Federation Homologation</span><span data-lang="es">Homologacion Federativa</span><span data-lang="fr">Homologation Federale</span></h4>
+        <p><span data-lang="en">In process of homologation with international survival federations and academic bodies (AEPF, CEDEFOP).</span><span data-lang="es">En proceso de homologacion con federaciones internacionales de supervivencia y organismos academicos (AEPF, CEDEFOP).</span><span data-lang="fr">En cours d'homologation aupres des federations internationales de survie et des organismes academiques (AEPF, CEDEFOP).</span></p>
+      </div>
+      <div class="cert-item">
+        <h4><span data-lang="en">Professional Use</span><span data-lang="es">Uso Profesional</span><span data-lang="fr">Usage Professionnel</span></h4>
+        <p><span data-lang="en">Credential for employment, instructor roles in AEANSB programs, and international professional networks.</span><span data-lang="es">Credencial para empleo, roles de instructor en programas AEANSB y redes profesionales internacionales.</span><span data-lang="fr">Credential pour l'emploi, roles d'instructeur dans les programmes AEANSB et reseaux professionnels internationaux.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BELT SYSTEM -->
+<section class="belts" id="programs">
+  <h2 class="section-title fade-in">
+    <span data-lang="en">Progressive Training Levels</span>
+    <span data-lang="es">Niveles de Formacion Progresiva</span>
+    <span data-lang="fr">Niveaux de Formation Progressifs</span>
+  </h2>
+  <p class="section-subtitle fade-in">
+    <span data-lang="en">Four structured modules from initiation to professional certification</span>
+    <span data-lang="es">Cuatro modulos estructurados desde la iniciacion hasta la certificacion profesional</span>
+    <span data-lang="fr">Quatre modules structures de l'initiation a la certification professionnelle</span>
+  </p>
+  <div class="belt-grid">
+    <!-- WHITE BELT -->
+    <div class="belt-card belt-white fade-in">
+      <div class="belt-header">
+        <h3><span data-lang="en">White Belt</span><span data-lang="es">Cinturon Blanco</span><span data-lang="fr">Ceinture Blanche</span></h3>
+        <div class="belt-location">Tangier, Morocco</div>
+        <div class="belt-date">May 8, 2026</div>
+      </div>
+      <div class="belt-body">
+        <p><span data-lang="en">Fundamentals of survival. Build your foundation in the essential skills every survivor needs.</span><span data-lang="es">Fundamentos de supervivencia. Construye tu base en las habilidades esenciales que todo superviviente necesita.</span><span data-lang="fr">Fondamentaux de la survie. Construisez votre base dans les competences essentielles.</span></p>
+        <ul>
+          <li><span data-lang="en">Fire starting techniques</span><span data-lang="es">Tecnicas de encendido de fuego</span><span data-lang="fr">Techniques d'allumage de feu</span></li>
+          <li><span data-lang="en">Water procurement & purification</span><span data-lang="es">Obtencion y purificacion de agua</span><span data-lang="fr">Approvisionnement et purification d'eau</span></li>
+          <li><span data-lang="en">Shelter construction</span><span data-lang="es">Construccion de refugios</span><span data-lang="fr">Construction d'abris</span></li>
+          <li><span data-lang="en">Food foraging & basic bushcraft</span><span data-lang="es">Recoleccion de alimentos y bushcraft basico</span><span data-lang="fr">Cueillette et bushcraft de base</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- GREEN BELT -->
+    <div class="belt-card belt-green fade-in">
+      <div class="belt-header">
+        <h3><span data-lang="en">Green Belt</span><span data-lang="es">Cinturon Verde</span><span data-lang="fr">Ceinture Verte</span></h3>
+        <div class="belt-location">Tangier, Morocco</div>
+        <div class="belt-date">June 12, 2026</div>
+      </div>
+      <div class="belt-body">
+        <p><span data-lang="en">Advanced techniques. Master ancestral weapons and wooden tool crafting.</span><span data-lang="es">Tecnicas avanzadas. Domina armas ancestrales y fabricacion de herramientas de madera.</span><span data-lang="fr">Techniques avancees. Maitrisez les armes ancestrales et la fabrication d'outils en bois.</span></p>
+        <ul>
+          <li><span data-lang="en">Advanced wooden tools</span><span data-lang="es">Herramientas de madera avanzadas</span><span data-lang="fr">Outils en bois avances</span></li>
+          <li><span data-lang="en">Ancestral weapons: bows & slingshots</span><span data-lang="es">Armas ancestrales: arcos y tirachinas</span><span data-lang="fr">Armes ancestrales: arcs et frondes</span></li>
+          <li><span data-lang="en">Trapping techniques</span><span data-lang="es">Tecnicas de trampeo</span><span data-lang="fr">Techniques de piegeage</span></li>
+          <li><span data-lang="en">Advanced navigation</span><span data-lang="es">Navegacion avanzada</span><span data-lang="fr">Navigation avancee</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- BLACK BELT -->
+    <div class="belt-card belt-black fade-in">
+      <div class="belt-header">
+        <h3><span data-lang="en">Black Belt</span><span data-lang="es">Cinturon Negro</span><span data-lang="fr">Ceinture Noire</span></h3>
+        <div class="belt-location">Tangier, Morocco</div>
+        <div class="belt-date">July 10, 2026</div>
+      </div>
+      <div class="belt-body">
+        <p><span data-lang="en">Pure Bushcraft. Ancestral toolmaking with flint, obsidian, and bone in high-stress scenarios.</span><span data-lang="es">Bushcraft Puro. Fabricacion ancestral de herramientas con silex, obsidiana y hueso en escenarios de alto estres.</span><span data-lang="fr">Bushcraft Pur. Fabrication ancestrale d'outils en silex, obsidienne et os dans des scenarios de stress intense.</span></p>
+        <ul>
+          <li><span data-lang="en">Flintknapping & obsidian toolmaking</span><span data-lang="es">Talla de silex y fabricacion con obsidiana</span><span data-lang="fr">Taille de silex et fabrication en obsidienne</span></li>
+          <li><span data-lang="en">Bone tool crafting</span><span data-lang="es">Fabricacion de herramientas de hueso</span><span data-lang="fr">Fabrication d'outils en os</span></li>
+          <li><span data-lang="en">High-stress survival scenarios</span><span data-lang="es">Escenarios de supervivencia de alto estres</span><span data-lang="fr">Scenarios de survie sous stress intense</span></li>
+          <li><span data-lang="en">Basket weaving & cordage</span><span data-lang="es">Cesteria y cordeleria</span><span data-lang="fr">Vannerie et cordage</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- RED BELT / MONITOR -->
+    <div class="belt-card belt-red fade-in">
+      <div class="belt-header">
+        <h3><span data-lang="en">Monitor Certificate</span><span data-lang="es">Certificado de Monitor</span><span data-lang="fr">Certificat de Moniteur</span></h3>
+        <div class="belt-location">Spain</div>
+        <div class="belt-date">Sept 4, 2026</div>
+      </div>
+      <div class="belt-body">
+        <p><span data-lang="en">Final Practicum & Exam. Become an officially certified Survival & Bushcraft Monitor.</span><span data-lang="es">Practicum Final y Examen. Conviertete en un Monitor de Supervivencia y Bushcraft oficialmente certificado.</span><span data-lang="fr">Stage Final et Examen. Devenez un Moniteur de Survie et Bushcraft officiellement certifie.</span></p>
+        <ul>
+          <li><span data-lang="en">Pass courses 1-3 (White, Green, Black)</span><span data-lang="es">Aprobar cursos 1-3 (Blanco, Verde, Negro)</span><span data-lang="fr">Reussir les cours 1-3 (Blanc, Vert, Noir)</span></li>
+          <li><span data-lang="en">Complete online module</span><span data-lang="es">Completar modulo online</span><span data-lang="fr">Completer le module en ligne</span></li>
+          <li><span data-lang="en">Submit 20-page academic paper</span><span data-lang="es">Presentar trabajo academico de 20 paginas</span><span data-lang="fr">Soumettre un memoire academique de 20 pages</span></li>
+          <li><span data-lang="en">Official International Diploma</span><span data-lang="es">Diploma Oficial Internacional</span><span data-lang="fr">Diplome Officiel International</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <h2 class="section-title fade-in">
+    <span data-lang="en">Enrollment Options</span>
+    <span data-lang="es">Opciones de Inscripcion</span>
+    <span data-lang="fr">Options d'Inscription</span>
+  </h2>
+  <p class="section-subtitle fade-in">
+    <span data-lang="en">Base: 99 registration + 50 operational costs per course (insurance, permits, meals)</span>
+    <span data-lang="es">Base: 99 inscripcion + 50 costes operativos por curso (seguro, permisos, comidas)</span>
+    <span data-lang="fr">Base: 99 inscription + 50 frais operationnels par cours (assurance, permis, repas)</span>
+  </p>
+  <div class="price-grid">
+    <div class="price-card fade-in">
+      <div class="price-name"><span data-lang="en">White Belt</span><span data-lang="es">Cinturon Blanco</span><span data-lang="fr">Ceinture Blanche</span></div>
+      <div class="price-amount">149<small>/total</small></div>
+      <div class="price-desc"><span data-lang="en">Initiation Course</span><span data-lang="es">Curso de Iniciacion</span><span data-lang="fr">Cours d'Initiation</span></div>
+      <ul class="price-features">
+        <li><span data-lang="en">3-day intensive in Tangier</span><span data-lang="es">3 dias intensivos en Tanger</span><span data-lang="fr">3 jours intensifs a Tanger</span></li>
+        <li><span data-lang="en">Full insurance coverage</span><span data-lang="es">Cobertura de seguro completa</span><span data-lang="fr">Couverture d'assurance complete</span></li>
+        <li><span data-lang="en">All meals included</span><span data-lang="es">Todas las comidas incluidas</span><span data-lang="fr">Tous les repas inclus</span></li>
+        <li><span data-lang="en">White Belt Diploma</span><span data-lang="es">Diploma Cinturon Blanco</span><span data-lang="fr">Diplome Ceinture Blanche</span></li>
+      </ul>
+      <button class="price-btn" onclick="scrollToSection('#enroll')"><span data-lang="en">Enroll Now</span><span data-lang="es">Inscribirse</span><span data-lang="fr">S'inscrire</span></button>
+    </div>
+    <div class="price-card featured fade-in">
+      <div class="price-name"><span data-lang="en">3x1 Full Program</span><span data-lang="es">Programa Completo 3x1</span><span data-lang="fr">Programme Complet 3x1</span></div>
+      <div class="price-amount">329<small>/total</small></div>
+      <div class="price-desc"><span data-lang="en">White + Green + Black Belt</span><span data-lang="es">Blanco + Verde + Negro</span><span data-lang="fr">Blanc + Vert + Noir</span></div>
+      <ul class="price-features">
+        <li><span data-lang="en">All 3 Morocco modules</span><span data-lang="es">Los 3 modulos en Marruecos</span><span data-lang="fr">Les 3 modules au Maroc</span></li>
+        <li><span data-lang="en">Full insurance coverage</span><span data-lang="es">Cobertura de seguro completa</span><span data-lang="fr">Couverture d'assurance complete</span></li>
+        <li><span data-lang="en">All meals included</span><span data-lang="es">Todas las comidas incluidas</span><span data-lang="fr">Tous les repas inclus</span></li>
+        <li><span data-lang="en">Save vs. individual booking</span><span data-lang="es">Ahorra vs. reserva individual</span><span data-lang="fr">Economisez vs. reservation individuelle</span></li>
+        <li><span data-lang="en">Priority Monitor access</span><span data-lang="es">Acceso prioritario a Monitor</span><span data-lang="fr">Acces prioritaire au Moniteur</span></li>
+      </ul>
+      <button class="price-btn" onclick="scrollToSection('#enroll')"><span data-lang="en">Best Value - Enroll</span><span data-lang="es">Mejor Oferta - Inscribirse</span><span data-lang="fr">Meilleure Offre - S'inscrire</span></button>
+    </div>
+    <div class="price-card fade-in">
+      <div class="price-name"><span data-lang="en">Monitor Certificate</span><span data-lang="es">Certificado Monitor</span><span data-lang="fr">Certificat Moniteur</span></div>
+      <div class="price-amount">209<small>/total</small></div>
+      <div class="price-desc"><span data-lang="en">Final Practicum in Spain</span><span data-lang="es">Practicum Final en Espana</span><span data-lang="fr">Stage Final en Espagne</span></div>
+      <ul class="price-features">
+        <li><span data-lang="en">Requires Belts 1-3 completed</span><span data-lang="es">Requiere Cinturones 1-3 completados</span><span data-lang="fr">Necessite Ceintures 1-3 completees</span></li>
+        <li><span data-lang="en">99 base + 50 ops + 60 cert fees</span><span data-lang="es">99 base + 50 ops + 60 certificacion</span><span data-lang="fr">99 base + 50 ops + 60 certification</span></li>
+        <li><span data-lang="en">Official International Diploma</span><span data-lang="es">Diploma Oficial Internacional</span><span data-lang="fr">Diplome Officiel International</span></li>
+        <li><span data-lang="en">Professional Monitor status</span><span data-lang="es">Estatus profesional de Monitor</span><span data-lang="fr">Statut professionnel de Moniteur</span></li>
+      </ul>
+      <button class="price-btn" onclick="scrollToSection('#enroll')"><span data-lang="en">Apply Now</span><span data-lang="es">Solicitar</span><span data-lang="fr">Postuler</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY & INSURANCE -->
+<section class="safety" id="safety">
+  <div class="safety-box fade-in">
+    <h2 class="section-title">
+      <span data-lang="en">Your Safety is Our Priority</span>
+      <span data-lang="es">Tu Seguridad es Nuestra Prioridad</span>
+      <span data-lang="fr">Votre Securite est Notre Priorite</span>
+    </h2>
+    <p class="section-subtitle" style="color:var(--gray-light)">
+      <span data-lang="en">Every participant is fully covered by a Collective Accident Insurance through Occident (Policy No. 549393882)</span>
+      <span data-lang="es">Cada participante esta totalmente cubierto por un Seguro Colectivo de Accidentes a traves de Occident (Poliza No. 549393882)</span>
+      <span data-lang="fr">Chaque participant est entierement couvert par une Assurance Collective Accidents via Occident (Police No. 549393882)</span>
+    </p>
+    <div class="safety-grid">
+      <div class="safety-item">
+        <div class="safety-icon">&#9899;</div>
+        <h4><span data-lang="en">Accidental Death</span><span data-lang="es">Muerte Accidental</span><span data-lang="fr">Deces Accidentel</span></h4>
+        <p><span data-lang="en">Coverage up to 10,000</span><span data-lang="es">Cobertura hasta 10.000</span><span data-lang="fr">Couverture jusqu'a 10.000</span></p>
+      </div>
+      <div class="safety-item">
+        <div class="safety-icon">&#9899;</div>
+        <h4><span data-lang="en">Permanent Disability</span><span data-lang="es">Incapacidad Permanente</span><span data-lang="fr">Invalidite Permanente</span></h4>
+        <p><span data-lang="en">Coverage up to 10,000</span><span data-lang="es">Cobertura hasta 10.000</span><span data-lang="fr">Couverture jusqu'a 10.000</span></p>
+      </div>
+      <div class="safety-item">
+        <div class="safety-icon">&#9899;</div>
+        <h4><span data-lang="en">Medical Assistance</span><span data-lang="es">Asistencia Medica</span><span data-lang="fr">Assistance Medicale</span></h4>
+        <p><span data-lang="en">Unlimited healthcare in contracted centers</span><span data-lang="es">Asistencia sanitaria ilimitada en centros concertados</span><span data-lang="fr">Soins de sante illimites dans les centres agrees</span></p>
+      </div>
+      <div class="safety-item">
+        <div class="safety-icon">&#9899;</div>
+        <h4><span data-lang="en">Emergency Evacuation</span><span data-lang="es">Evacuacion de Emergencia</span><span data-lang="fr">Evacuation d'Urgence</span></h4>
+        <p><span data-lang="en">Unlimited medical evacuation coverage</span><span data-lang="es">Cobertura ilimitada de evacuacion medica</span><span data-lang="fr">Couverture illimitee d'evacuation medicale</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <h2 class="section-title fade-in">
+    <span data-lang="en">Training Gallery</span>
+    <span data-lang="es">Galeria de Formacion</span>
+    <span data-lang="fr">Galerie de Formation</span>
+  </h2>
+  <p class="section-subtitle fade-in">
+    <span data-lang="en">Real skills, real tools, real survival</span>
+    <span data-lang="es">Habilidades reales, herramientas reales, supervivencia real</span>
+    <span data-lang="fr">Competences reelles, outils reels, survie reelle</span>
+  </p>
+  <div class="gallery-grid fade-in">
+    <img src="assets/gallery_tanger.jpeg" alt="Tangier training location" onclick="openLightbox(this)">
+    <img src="assets/gallery_cestas.jpeg" alt="Basket weaving" onclick="openLightbox(this)">
+    <img src="assets/gallery_cuchillo.jpeg" alt="Bone knife crafting" onclick="openLightbox(this)">
+    <img src="assets/gallery_cuernos.jpeg" alt="Antler tools" onclick="openLightbox(this)">
+    <img src="assets/gallery_tirachinas.jpeg" alt="Slingshot crafting" onclick="openLightbox(this)">
+    <img src="assets/gallery_utensilios.jpeg" alt="Bushcraft utensils" onclick="openLightbox(this)">
+    <img src="assets/gallery_bone.jpeg" alt="Bone tools" onclick="openLightbox(this)">
+    <img src="assets/gallery_aboriginal.jpeg" alt="Aboriginal techniques" onclick="openLightbox(this)">
+    <img src="assets/gallery_flintknapping.jpeg" alt="Flintknapping tools" onclick="openLightbox(this)">
+    <img src="assets/gallery_varios.jpeg" alt="Various survival tools" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<!-- CANCELLATION POLICIES -->
+<section class="policies" id="policies">
+  <h2 class="section-title fade-in">
+    <span data-lang="en">Transparent Policies</span>
+    <span data-lang="es">Politicas Transparentes</span>
+    <span data-lang="fr">Politiques Transparentes</span>
+  </h2>
+  <p class="section-subtitle fade-in">
+    <span data-lang="en">Clear cancellation and refund policies for your peace of mind</span>
+    <span data-lang="es">Politicas claras de cancelacion y reembolso para tu tranquilidad</span>
+    <span data-lang="fr">Politiques claires d'annulation et de remboursement pour votre tranquillite</span>
+  </p>
+  <div class="accordion fade-in">
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggleAcc(this)">
+        <span><span data-lang="en">Force Majeure / Illness</span><span data-lang="es">Fuerza Mayor / Enfermedad</span><span data-lang="fr">Force Majeure / Maladie</span></span>
+      </div>
+      <div class="acc-body"><p><span data-lang="en">Option to move enrollment to 2027 edition or receive a 50% refund of the course fee.</span><span data-lang="es">Opcion de trasladar la inscripcion a la edicion 2027 o recibir un reembolso del 50% de la cuota del curso.</span><span data-lang="fr">Option de transferer l'inscription a l'edition 2027 ou de recevoir un remboursement de 50% des frais de cours.</span></p></div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggleAcc(this)">
+        <span><span data-lang="en">Closure by Authorities</span><span data-lang="es">Cierre por Autoridades</span><span data-lang="fr">Fermeture par les Autorites</span></span>
+      </div>
+      <div class="acc-body"><p><span data-lang="en">Treated as Force Majeure. Your spot is guaranteed for the next available date, or you receive a 75% refund.</span><span data-lang="es">Tratado como Fuerza Mayor. Tu plaza queda garantizada para la proxima fecha disponible, o recibes un reembolso del 75%.</span><span data-lang="fr">Traite comme Force Majeure. Votre place est garantie pour la prochaine date disponible, ou vous recevez un remboursement de 75%.</span></p></div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggleAcc(this)">
+        <span><span data-lang="en">Severe Weather</span><span data-lang="es">Clima Severo</span><span data-lang="fr">Conditions Meteorologiques Severes</span></span>
+      </div>
+      <div class="acc-body"><p><span data-lang="en">Training adapts to the environment - that's survival. If conditions become life-threatening, the date is automatically rescheduled at no extra cost.</span><span data-lang="es">La formacion se adapta al entorno - eso es supervivencia. Si las condiciones ponen en peligro la vida, la fecha se reprograma automaticamente sin coste adicional.</span><span data-lang="fr">La formation s'adapte a l'environnement - c'est la survie. Si les conditions deviennent dangereuses, la date est automatiquement reprogrammee sans frais supplementaires.</span></p></div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-header" onclick="toggleAcc(this)">
+        <span><span data-lang="en">Organization Cancellation</span><span data-lang="es">Cancelacion por la Organizacion</span><span data-lang="fr">Annulation par l'Organisation</span></span>
+      </div>
+      <div class="acc-body"><p><span data-lang="en">100% full refund of all fees paid. No questions asked.</span><span data-lang="es">Reembolso completo del 100% de todas las cuotas pagadas. Sin preguntas.</span><span data-lang="fr">Remboursement integral de 100% de tous les frais payes. Sans questions.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY COUNTER -->
+<section class="urgency">
+  <div class="urgency-label">
+    <span data-lang="en">LIMITED PLACES AVAILABLE</span>
+    <span data-lang="es">PLAZAS LIMITADAS DISPONIBLES</span>
+    <span data-lang="fr">PLACES LIMITEES DISPONIBLES</span>
+  </div>
+  <div class="urgency-count" id="placesCount">16</div>
+  <div class="urgency-sub">
+    <span data-lang="en">of 20 places remaining | Enrollment deadline: April 25, 2026</span>
+    <span data-lang="es">de 20 plazas restantes | Fecha limite de inscripcion: 25 de abril de 2026</span>
+    <span data-lang="fr">sur 20 places restantes | Date limite d'inscription: 25 avril 2026</span>
+  </div>
+</section>
+
+<!-- ENROLLMENT FORM -->
+<section class="enroll" id="enroll">
+  <div class="form-box fade-in">
+    <h3>
+      <span data-lang="en">Pre-Enrollment Form</span>
+      <span data-lang="es">Formulario de Pre-Inscripcion</span>
+      <span data-lang="fr">Formulaire de Pre-Inscription</span>
+    </h3>
+    <form id="enrollForm" onsubmit="handleSubmit(event)">
+      <div class="fg">
+        <label><span data-lang="en">Full Name *</span><span data-lang="es">Nombre Completo *</span><span data-lang="fr">Nom Complet *</span></label>
+        <input type="text" name="name" required placeholder="John Doe">
+      </div>
+      <div class="fg">
+        <label>Email *</label>
+        <input type="email" name="email" required placeholder="your@email.com">
+      </div>
+      <div class="fg">
+        <label><span data-lang="en">Phone</span><span data-lang="es">Telefono</span><span data-lang="fr">Telephone</span></label>
+        <input type="tel" name="phone" placeholder="+34 666 123 456">
+      </div>
+      <div class="fg">
+        <label><span data-lang="en">Interest Level *</span><span data-lang="es">Nivel de Interes *</span><span data-lang="fr">Niveau d'Interet *</span></label>
+        <select name="level" required>
+          <option value="">--</option>
+          <option value="white">White Belt (149)</option>
+          <option value="green">White + Green (249)</option>
+          <option value="black">3x1 Full Program (329)</option>
+          <option value="monitor">Monitor Certificate (209)</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit">
+        <span data-lang="en">Join the Waitlist</span>
+        <span data-lang="es">Unirse a la Lista de Espera</span>
+        <span data-lang="fr">Rejoindre la Liste d'Attente</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- TERMS & CONDITIONS -->
+<section class="terms" id="terms">
+  <h2 class="section-title fade-in">
+    <span data-lang="en">Terms, Conditions & Legal Framework</span>
+    <span data-lang="es">Terminos, Condiciones y Marco Legal</span>
+    <span data-lang="fr">Termes, Conditions et Cadre Juridique</span>
+  </h2>
+  <p class="section-subtitle fade-in">
+    <span data-lang="en">Full transparency and legal protection for all participants</span>
+    <span data-lang="es">Total transparencia y proteccion legal para todos los participantes</span>
+    <span data-lang="fr">Transparence totale et protection juridique pour tous les participants</span>
+  </p>
+  <div class="terms-grid">
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Payment & Refunds</span><span data-lang="es">Pagos y Reembolsos</span><span data-lang="fr">Paiements et Remboursements</span></h4>
+      <p><span data-lang="en">50% deposit upon enrollment, 50% one week before module start. Full refund up to 30 days before. 50% refund 15-30 days before. Secure PCI-DSS certified payment processing with SSL/TLS 1.2+ encryption. Directive 2015/2366/EU (PSD2) compliant.</span><span data-lang="es">50% de deposito al inscribirse, 50% una semana antes del inicio del modulo. Reembolso completo hasta 30 dias antes. 50% de reembolso 15-30 dias antes. Procesamiento de pagos certificado PCI-DSS con encriptacion SSL/TLS 1.2+. Cumple con la Directiva 2015/2366/UE (PSD2).</span><span data-lang="fr">50% d'acompte a l'inscription, 50% une semaine avant le debut du module. Remboursement integral jusqu'a 30 jours avant. 50% de remboursement 15-30 jours avant. Traitement des paiements certifie PCI-DSS avec cryptage SSL/TLS 1.2+. Conforme a la Directive 2015/2366/UE (PSD2).</span></p>
+    </div>
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Data Protection (GDPR)</span><span data-lang="es">Proteccion de Datos (RGPD)</span><span data-lang="fr">Protection des Donnees (RGPD)</span></h4>
+      <p><span data-lang="en">Your personal data is protected under GDPR 2016/679. We collect only necessary information. You have rights to access, rectify, delete, limit processing, data portability, and object. Data retained for 5 years per legal obligations. Contact: info@aeansb.es</span><span data-lang="es">Tus datos personales estan protegidos bajo el RGPD 2016/679. Solo recopilamos informacion necesaria. Tienes derecho de acceso, rectificacion, supresion, limitacion, portabilidad y oposicion. Datos conservados 5 anos por obligaciones legales. Contacto: info@aeansb.es</span><span data-lang="fr">Vos donnees personnelles sont protegees par le RGPD 2016/679. Nous ne collectons que les informations necessaires. Vous avez droit d'acces, de rectification, de suppression, de limitation, de portabilite et d'opposition. Donnees conservees 5 ans. Contact: info@aeansb.es</span></p>
+    </div>
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Legal Authority & Jurisdiction</span><span data-lang="es">Autoridad Legal y Jurisdiccion</span><span data-lang="fr">Autorite Legale et Juridiction</span></h4>
+      <p><span data-lang="en">AEANSB is registered with Spain's Ministry of Interior under Organic Law 1/2002. Jurisdiction: Courts of Madrid (Spain). EU Regulation 1215/2012 (Brussels I bis) and 593/2008 (Rome I) apply for international disputes. Moroccan law applies for local activities.</span><span data-lang="es">AEANSB esta registrada en el Ministerio del Interior bajo la Ley Organica 1/2002. Jurisdiccion: Tribunales de Madrid (Espana). Reglamento UE 1215/2012 (Bruselas I bis) y 593/2008 (Roma I) para disputas internacionales. Ley marroqui para actividades locales.</span><span data-lang="fr">L'AEANSB est enregistree aupres du Ministere de l'Interieur espagnol en vertu de la Loi Organique 1/2002. Juridiction: Tribunaux de Madrid (Espagne). Reglement UE 1215/2012 (Bruxelles I bis) et 593/2008 (Rome I) pour les litiges internationaux. Droit marocain pour les activites locales.</span></p>
+    </div>
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Risk Waiver & Insurance</span><span data-lang="es">Exencion de Riesgo y Seguro</span><span data-lang="fr">Decharge de Risque et Assurance</span></h4>
+      <p><span data-lang="en">Participants declare physical and mental fitness and assume inherent risks of survival activities. AEANSB maintains civil liability insurance (Occident Policy 549393882): 10,000 accidental death, 10,000 permanent disability, unlimited medical assistance. Full waiver required upon enrollment.</span><span data-lang="es">Los participantes declaran aptitud fisica y mental y asumen los riesgos inherentes. AEANSB mantiene seguro de responsabilidad civil (Poliza Occident 549393882): 10.000 muerte accidental, 10.000 incapacidad permanente, asistencia medica ilimitada. Exencion completa requerida al inscribirse.</span><span data-lang="fr">Les participants declarent leur aptitude physique et mentale et assument les risques inherents. L'AEANSB maintient une assurance responsabilite civile (Police Occident 549393882): 10.000 deces accidentel, 10.000 invalidite permanente, assistance medicale illimitee. Decharge complete requise a l'inscription.</span></p>
+    </div>
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Diploma Validity & Use</span><span data-lang="es">Validez y Uso del Diploma</span><span data-lang="fr">Validite et Usage du Diplome</span></h4>
+      <p><span data-lang="en">The Official Monitor Diploma has international character under AEANSB Statutes (Art. 2 & 3). Valid for professional use, employment credentials, and AEANSB instructor roles. Homologation in progress with international federations. AEANSB is not responsible for third-party recognition claims.</span><span data-lang="es">El Diploma Oficial de Monitor tiene caracter internacional segun los Estatutos de AEANSB (Art. 2 y 3). Valido para uso profesional, credenciales de empleo y roles de instructor AEANSB. Homologacion en proceso con federaciones internacionales. AEANSB no es responsable de reclamaciones de reconocimiento de terceros.</span><span data-lang="fr">Le Diplome Officiel de Moniteur a un caractere international selon les Statuts de l'AEANSB (Art. 2 et 3). Valable pour usage professionnel, credentials d'emploi et roles d'instructeur AEANSB. Homologation en cours aupres des federations internationales. L'AEANSB n'est pas responsable des reclamations de reconnaissance de tiers.</span></p>
+    </div>
+    <div class="term-card fade-in">
+      <h4><span data-lang="en">Right of Withdrawal (14 days)</span><span data-lang="es">Derecho de Desistimiento (14 dias)</span><span data-lang="fr">Droit de Retractation (14 jours)</span></h4>
+      <p><span data-lang="en">You may withdraw within 14 calendar days from enrollment confirmation without justification (Law 34/1988). Send written notice to info@aeansb.es. Refund processed within 10 business days. Exception: if online module has been accessed.</span><span data-lang="es">Puedes desistir dentro de los 14 dias naturales desde la confirmacion de inscripcion sin justificacion (Ley 34/1988). Envia comunicacion escrita a info@aeansb.es. Reembolso procesado en 10 dias habiles. Excepcion: si se ha accedido al modulo online.</span><span data-lang="fr">Vous pouvez vous retracter dans les 14 jours calendaires suivant la confirmation d'inscription sans justification (Loi 34/1988). Envoyez un avis ecrit a info@aeansb.es. Remboursement traite dans les 10 jours ouvrables. Exception: si le module en ligne a ete consulte.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-logos">
+        <img src="assets/logo_academia.webp" alt="AEANSB">
+        <img src="assets/logo_wnsx.png" alt="WNSX">
+        <img src="assets/logo_wild_morocco.png" alt="Wild Morocco" style="height:60px">
+      </div>
+      <p><span data-lang="en">Official survival academy registered with Spain's Ministry of Interior. Promoting environmental education and resilience through bushcraft and survival training since 2025.</span><span data-lang="es">Academia oficial de supervivencia registrada en el Ministerio del Interior de Espana. Promoviendo la educacion ambiental y la resiliencia a traves de la formacion en bushcraft y supervivencia desde 2025.</span><span data-lang="fr">Academie officielle de survie enregistree aupres du Ministere de l'Interieur espagnol. Promotion de l'education environnementale et de la resilience par la formation en bushcraft et survie depuis 2025.</span></p>
+    </div>
+    <div class="footer-col">
+      <h4><span data-lang="en">Contact</span><span data-lang="es">Contacto</span><span data-lang="fr">Contact</span></h4>
+      <p>Email: info@aeansb.es</p>
+      <p><span data-lang="en">Address: Despenadero 10, 28189 Patones de Arriba, Madrid</span><span data-lang="es">Direccion: Despenadero 10, 28189 Patones de Arriba, Madrid</span><span data-lang="fr">Adresse: Despenadero 10, 28189 Patones de Arriba, Madrid</span></p>
+      <p>Web: <a href="https://cursodesupervivencia.com" target="_blank">cursodesupervivencia.com</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#terms"><span data-lang="en">Terms & Conditions</span><span data-lang="es">Terminos y Condiciones</span><span data-lang="fr">Termes et Conditions</span></a>
+      <a href="#terms"><span data-lang="en">Privacy Policy</span><span data-lang="es">Politica de Privacidad</span><span data-lang="fr">Politique de Confidentialite</span></a>
+      <a href="#policies"><span data-lang="en">Cancellation Policy</span><span data-lang="es">Politica de Cancelacion</span><span data-lang="fr">Politique d'Annulation</span></a>
+      <a href="#terms"><span data-lang="en">Risk Waiver</span><span data-lang="es">Exencion de Riesgo</span><span data-lang="fr">Decharge de Risque</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AEANSB - Academia Espanola de Artes de la Naturaleza, Supervivencia y Bushcraft. <span data-lang="en">All rights reserved.</span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="fr">Tous droits reserves.</span></p>
+    <p><span data-lang="en">Registered with Spain's Ministry of Interior (Reg. 632967) | Occident Insurance Policy 549393882 | GDPR Compliant</span><span data-lang="es">Registrada en el Ministerio del Interior (Reg. 632967) | Poliza Occident 549393882 | Cumple RGPD</span><span data-lang="fr">Enregistree au Ministere de l'Interieur (Reg. 632967) | Police Occident 549393882 | Conforme RGPD</span></p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+// === LANGUAGE SYSTEM ===
+let currentLang = 'en';
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang') === lang ? 'initial' : 'none';
+  });
+  localStorage.setItem('wm_lang', lang);
+}
+// Restore saved language
+const saved = localStorage.getItem('wm_lang');
+if (saved) setLang(saved);
+
+// === NAVBAR ===
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+// Close menu on link click (mobile)
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+// === SCROLL TO ===
+function scrollToSection(sel) {
+  document.querySelector(sel).scrollIntoView({behavior:'smooth'});
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// === ACCORDION ===
+function toggleAcc(header) {
+  const item = header.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.acc-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// === GALLERY LIGHTBOX ===
+function openLightbox(img) {
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+
+// === FORM ===
+function handleSubmit(e) {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const data = Object.fromEntries(fd);
+  console.log('Enrollment:', data);
+  const msgs = {
+    en: 'Thank you for your interest! We will contact you within 48 hours.',
+    es: 'Gracias por tu interes! Te contactaremos en 48 horas.',
+    fr: 'Merci pour votre interet! Nous vous contacterons dans les 48 heures.'
+  };
+  alert(msgs[currentLang] || msgs.en);
+  e.target.reset();
+}
+
+// === SCROLL ANIMATIONS ===
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
